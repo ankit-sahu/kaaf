@@ -1,0 +1,3 @@
+2017-03-10 14:48:44,600 - sample - INFO - try hard
+2017-03-10 15:16:42,336 - sample - INFO - try hard
+2017-03-10 15:27:34,339 - Login - INFO - try hard

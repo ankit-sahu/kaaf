@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Test Report</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<style>
+body {
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+* {
+    word-break: break-all;
+}
+table, td, th, .dataid {
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    background: #fff;
+}
+section {
+    background: rgba(0, 0, 0, 0.05);
+    margin: 2ex;
+    padding: 1ex;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 130%;
+}
+h2 {
+    font-size: 120%;
+}
+h3 {
+    font-size: 100%;
+}
+h4 {
+    font-size: 85%;
+}
+h1, h2, h3, h4, a[href] {
+    cursor: pointer;
+    color: #0074d9;
+    text-decoration: none;
+}
+h3 strong, a.failed {
+    color: #ff4136;
+}
+.failed {
+    color: #ff4136;
+}
+a.success {
+    color: #3d9970;
+}
+pre {
+    font-family: 'Consolas', 'Deja Vu Sans Mono',
+                 'Bitstream Vera Sans Mono', 'Monaco',
+                 'Courier New', monospace;
+}
+
+.test-details,
+.traceback {
+    display: none;
+}
+section:target .test-details {
+    display: block;
+}
+
+</style>
+</head>
+<body>
+    <h1>Overview</h1>
+    <section>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th class="failed">Fail</th>
+                <th>Error</th>
+                <th>Skip</th>
+                <th>Success</th>
+                <th>Total</th>
+            </tr>
+                <tr>
+                    <td>login_tests.Login</td>
+                    <td class="failed">4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td class="failed">4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </section>
+    <h1>Failure details</h1>
+            <section>
+                <h2>login_tests.Login (4 failures, 0 errors)</h2>
+                <div>
+                        <section id="login_tests.Login:test_sample1_2__1__2_">
+                            <h3>test_sample1_2__1__2_: <strong>builtins.AssertionError</strong></h3>
+                            <div class="test-details">
+                                <h4>Traceback</h4>
+                                <pre class="traceback">Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 601, in run
+    testMethod()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/ankitsahu/Documents/kaaf/tests/login_tests.py", line 38, in test_sample1
+    self.assertEquals(a,b)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 1312, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 821, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 814, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+</pre>
+                                <h4>Details</h4>
+                                <pre>1 != 2</pre>
+                            </div>
+                        </section>
+                        <section id="login_tests.Login:test_sample1_3__1__3_">
+                            <h3>test_sample1_3__1__3_: <strong>builtins.AssertionError</strong></h3>
+                            <div class="test-details">
+                                <h4>Traceback</h4>
+                                <pre class="traceback">Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 601, in run
+    testMethod()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/ankitsahu/Documents/kaaf/tests/login_tests.py", line 38, in test_sample1
+    self.assertEquals(a,b)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 1312, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 821, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 814, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 3
+</pre>
+                                <h4>Details</h4>
+                                <pre>1 != 3</pre>
+                            </div>
+                        </section>
+                        <section id="login_tests.Login:test_sample2">
+                            <h3>test_sample2: <strong>builtins.AssertionError</strong></h3>
+                            <div class="test-details">
+                                <h4>Traceback</h4>
+                                <pre class="traceback">Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 601, in run
+    testMethod()
+  File "/Users/ankitsahu/Documents/kaaf/tests/login_tests.py", line 42, in test_sample2
+    self.assertEquals(1,2)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 1312, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 821, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 814, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+</pre>
+                                <h4>Details</h4>
+                                <pre>1 != 2</pre>
+                            </div>
+                        </section>
+                        <section id="login_tests.Login:test_sample3">
+                            <h3>test_sample3: <strong>builtins.AssertionError</strong></h3>
+                            <div class="test-details">
+                                <h4>Traceback</h4>
+                                <pre class="traceback">Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 601, in run
+    testMethod()
+  File "/Users/ankitsahu/Documents/kaaf/tests/login_tests.py", line 45, in test_sample3
+    self.assertEquals('a', 3)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 1312, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 821, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/case.py", line 814, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'a' != 3
+</pre>
+                                <h4>Details</h4>
+                                <pre>'a' != 3</pre>
+                            </div>
+                        </section>
+                </div>
+            </section>
+
+    <h1>All tests</h1>
+    <section>
+        <h2>login_tests.Login (4 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_sample1_1__1__1_</a></li>
+                <li><a class="failed" href="#login_tests.Login:test_sample1_2__1__2_">test_sample1_2__1__2_</a></li>
+                <li><a class="failed" href="#login_tests.Login:test_sample1_3__1__3_">test_sample1_3__1__3_</a></li>
+                <li><a class="failed" href="#login_tests.Login:test_sample2">test_sample2</a></li>
+                <li><a class="failed" href="#login_tests.Login:test_sample3">test_sample3</a></li>
+        </ul>
+    </section>
+</body>
+<script>
+    Array.prototype.forEach.call(document.querySelectorAll('h1, h2, h3, h4'), function(el) {
+        el.addEventListener('click', function() {
+            el.nextElementSibling.style.display = document.defaultView.getComputedStyle(el.nextElementSibling).display == 'none' ? 'block' : 'none';
+        })
+    })
+</script>
+</html>
