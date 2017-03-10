@@ -11,4 +11,4 @@ class Config(object):
 
 	# App related config
 	# url = "http://ergast.com/api/f1/2008.json"
-	url = "https://kabuni.io/api/v1/account/signin"
+	url = ""
